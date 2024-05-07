@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+    <display-name>MyCinemaApp</display-name>
+
+    <servlet>
+        <servlet-name>SignUpServlet</servlet-name>
+        <servlet-class>com.movieticket.servlets.SignUpServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignUpServlet</servlet-name>
+        <url-pattern>/signup</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DisplayMovieServlet</servlet-name>
+        <servlet-class>com.movieticket.servlets.DisplayMovieServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DisplayMovieServlet</servlet-name>
+        <url-pattern>/movie</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MovieDetailsServlet</servlet-name>
+        <servlet-class>com.movieticket.servlets.MovieDetailsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MovieDetailsServlet</servlet-name>
+        <url-pattern>/details</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ReservationServlet</servlet-name>
+        <servlet-class>com.movieticket.servlets.user.ReservationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ReservationServlet</servlet-name>
+        <url-pattern>/user/reserve</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddReactionServlet</servlet-name>
+        <servlet-class>com.movieticket.servlets.user.AddReactionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddReactionServlet</servlet-name>
+        <url-pattern>/user/addReaction</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteReactionServlet</servlet-name>
+        <servlet-class>com.movieticket.servlets.user.DeleteReactionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteReactionServlet</servlet-name>
+        <url-pattern>/user/deletReaction</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>AllReservationServlet</servlet-name>
+        <servlet-class>com.movieticket.servlets.user.AllReservationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AllReservationServlet</servlet-name>
+        <url-pattern>/user/reservations</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PanierServlet</servlet-name>
+        <servlet-class>com.movieticket.servlets.user.PanierServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PanierServlet</servlet-name>
+        <url-pattern>/user/panier</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddMovieServlet</servlet-name>
+        <servlet-class>com.movieticket.servlets.admin.AddMovieServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddMovieServlet</servlet-name>
+        <url-pattern>/admin/add</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DashboardServlet</servlet-name>
+        <servlet-class>com.movieticket.servlets.admin.DashboardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DashboardServlet</servlet-name>
+        <url-pattern>/admin/dashboard</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.movieticket.servlets.LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+
+
+
+    <welcome-file-list>
+        <welcome-file>movie</welcome-file>
+    </welcome-file-list>
+
+
+</web-app>
